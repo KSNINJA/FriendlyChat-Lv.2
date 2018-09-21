@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.kartiksinghal.friendlychat.new_chat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/new_message"
+
+    >
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/new_chat_img_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:onClick="select_image"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/add_image_background"
+        />
+
+    <EditText
+        android:id="@+id/chat_name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Name Of the Chat"
+    android:layout_margin="20dp"
+        android:inputType="text"/>
+    <EditText
+        android:id="@+id/recipient_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Recipient 1"
+        android:layout_margin="20dp"
+        android:inputType="text"/>
+    <EditText
+        android:id="@+id/recipient_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Recipient 2"
+        android:layout_margin="20dp"
+        android:inputType="text"/>
+    <EditText
+        android:id="@+id/recipient_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Recipient 3"
+        android:layout_margin="20dp"
+        android:inputType="text"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:background="#3399ff"
+        android:layout_gravity="end"
+        android:layout_margin="40dp"
+        android:id="@+id/new_chat_form_btn"
+        android:onClick="new_chat_form_filled"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>
